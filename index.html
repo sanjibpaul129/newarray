@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Download Links</title>
+</head>
+<body>
+
+<script>
+  // Your array of file URLs
+  var fileLinks = ["https://sr.knowlarity.com/vr/api/getrecording/0545ed7f-75fd-4e04-bbd1-b2d086f574cd","https://sr.knowlarity.com/vr/api/getrecording/a169e6ed-5020-43cb-a961-0482b6c1ea94","https://sr.knowlarity.com/vr/api/getrecording/fdc1bec6-16e7-4633-bc83-ba74f7273f9a","https://sr.knowlarity.com/vr/api/getrecording/6ddf8d01-a51a-495b-a60b-9acd4c9f2a3f","https://sr.knowlarity.com/vr/api/getrecording/94b064bb-3228-4e91-86f1-1ee976798e92","https://sr.knowlarity.com/vr/api/getrecording/ee1d7b77-64ab-4874-8079-3b0f7e513fcb","https://sr.knowlarity.com/vr/api/getrecording/f7204391-c5a9-475d-a912-194b3521184d","https://sr.knowlarity.com/vr/api/getrecording/bfa62625-994e-4dca-bd94-f140b904aa08","https://sr.knowlarity.com/vr/api/getrecording/40ef0081-0ce7-4e53-90c8-a97686578980","https://sr.knowlarity.com/vr/api/getrecording/fe552d15-a637-4267-95f1-15d4a591b00a","https://sr.knowlarity.com/vr/api/getrecording/5ee4b004-a35f-4069-a539-160a89b3efba","https://sr.knowlarity.com/vr/api/getrecording/24bc90b4-ea89-40a6-b845-5ce85e8b3e04","https://sr.knowlarity.com/vr/api/getrecording/a734d985-0cd5-4c3b-951d-86885276ef57","https://sr.knowlarity.com/vr/api/getrecording/396f7049-0f51-469b-9dc6-3eefc89d8500","https://sr.knowlarity.com/vr/api/getrecording/98f23620-1553-4661-8358-ec8f60b409c7","https://sr.knowlarity.com/vr/api/getrecording/2b1a0a9a-292d-4ba8-a180-1fdc2ab73f83","https://sr.knowlarity.com/vr/api/getrecording/a73f675f-9431-47b3-8412-6a57da34b398","https://sr.knowlarity.com/vr/api/getrecording/7c1c80cd-11dc-46ab-97f7-e2a3a4d22ea4","https://sr.knowlarity.com/vr/api/getrecording/c64edc7d-64e8-4c55-a2e2-33507620854b","https://sr.knowlarity.com/vr/api/getrecording/ae5e76f6-bed3-4db7-b447-5b81d2aa91de","https://sr.knowlarity.com/vr/api/getrecording/b093769f-3986-4829-b989-4846f0c8b533","https://sr.knowlarity.com/vr/api/getrecording/399926f9-1582-4c6f-9f2b-7b2dd6ead6b6","https://sr.knowlarity.com/vr/api/getrecording/4c6a270f-0ddd-4bd7-9ffa-dbaeaa349787","https://sr.knowlarity.com/vr/api/getrecording/d8737415-65a3-4e9f-881c-94764ad6706b","https://sr.knowlarity.com/vr/api/getrecording/5ae18e22-25a8-4ef3-8494-8fccc8049f5a","https://sr.knowlarity.com/vr/api/getrecording/e0fd1cd4-5781-478d-897e-9cc07e84e554","https://sr.knowlarity.com/vr/api/getrecording/34a64c60-dd23-43f4-acc3-d7d678e2a208","https://sr.knowlarity.com/vr/api/getrecording/f5d71650-0aa5-4850-b9e4-833965fa843d","https://sr.knowlarity.com/vr/api/getrecording/241cab54-9c2a-4e5a-b7f7-b9f4fe7983f2","https://sr.knowlarity.com/vr/api/getrecording/0357ee3e-e0b1-41c6-b29f-7b71d32e6a0d","https://sr.knowlarity.com/vr/api/getrecording/c5a2d3d6-211d-4f80-8d4b-d19ac1c31900","https://sr.knowlarity.com/vr/api/getrecording/39df8b3c-c362-4d7c-b7c2-8f60db38c49d","https://sr.knowlarity.com/vr/api/getrecording/e3b85a42-f3c5-4c0d-8adf-83d40d0e54ad","https://sr.knowlarity.com/vr/api/getrecording/e222691a-d2f8-4e9f-a3f2-2dd76668362c","https://sr.knowlarity.com/vr/api/getrecording/a23b5f00-97d8-41b0-a70c-4cd1c8014594","https://sr.knowlarity.com/vr/api/getrecording/54be4e7a-38ab-4666-9eec-03b4ada0b574","https://sr.knowlarity.com/vr/api/getrecording/a075f00e-d6b2-44c4-9927-129bf1463645","https://sr.knowlarity.com/vr/api/getrecording/c73f252e-cd54-4503-b2b4-b0ae5850f148","https://sr.knowlarity.com/vr/api/getrecording/8293ffb1-338d-4444-a386-5678d844c131","https://sr.knowlarity.com/vr/api/getrecording/f2dc332e-da22-4bd6-a643-75a4437f2b58","https://sr.knowlarity.com/vr/api/getrecording/9901d012-e78e-46a9-b841-e8b1da2d8e6b","https://sr.knowlarity.com/vr/api/getrecording/a03720e6-eba0-4721-876d-4ce88562af3e","https://sr.knowlarity.com/vr/api/getrecording/337bc1a8-5b85-41e2-a1a4-f412c8f95b2d","https://sr.knowlarity.com/vr/api/getrecording/ae667e18-ff91-48c9-9a93-07010fdb427e","https://sr.knowlarity.com/vr/api/getrecording/e48bfc57-a2ff-40c9-a8c1-7f21e9a38127","https://sr.knowlarity.com/vr/api/getrecording/0b36d670-9c9f-46ff-8c5e-37f5a9c751a5","https://sr.knowlarity.com/vr/api/getrecording/cbeb4bb8-7fa6-4af9-8313-6a06d3710806","https://sr.knowlarity.com/vr/api/getrecording/fccc60de-a41b-4ac0-9812-32aa26bf19e6","https://sr.knowlarity.com/vr/api/getrecording/c286c103-1e51-43d2-8988-01cb69b75456","https://sr.knowlarity.com/vr/api/getrecording/ca54e5b9-3318-45ec-b0db-1acfd10b7f2e","https://sr.knowlarity.com/vr/api/getrecording/338346f9-6166-44e8-aa92-4ace9ecefcae","https://sr.knowlarity.com/vr/api/getrecording/9f74f799-5721-4f11-b3fd-5d72a638de24","https://sr.knowlarity.com/vr/api/getrecording/9332a794-0645-49cf-9efc-d4788080fbd5","https://sr.knowlarity.com/vr/api/getrecording/8fe8c767-6f1e-4640-a4ab-e9789e657579","https://sr.knowlarity.com/vr/api/getrecording/ea970a7a-aa33-49ac-8ac5-1be85351ecc9","https://sr.knowlarity.com/vr/api/getrecording/487bf24c-8be8-4333-b4d4-05a8ae6475f6","https://sr.knowlarity.com/vr/api/getrecording/be3bc922-8a95-47d3-9f88-635f64879708","https://sr.knowlarity.com/vr/api/getrecording/036abc56-b1cb-4b2d-a417-a256ad473d48","https://sr.knowlarity.com/vr/api/getrecording/b46bd538-13dc-4a1c-903b-ee13ffd92174","https://sr.knowlarity.com/vr/api/getrecording/668cbf20-c1eb-4a15-8cd6-2632ad03dab2","https://sr.knowlarity.com/vr/api/getrecording/2aa51888-6559-4a69-8d9a-a7c69d2c00a2","https://sr.knowlarity.com/vr/api/getrecording/8399c187-173e-481a-b40c-2c925c0f5311","https://sr.knowlarity.com/vr/api/getrecording/0aac483e-29dd-4c41-a223-36620a56992e","https://sr.knowlarity.com/vr/api/getrecording/8809e161-e4e4-470f-bf64-4b9c11aba01e","https://sr.knowlarity.com/vr/api/getrecording/61b1d6d1-f3ff-4929-a67a-b00552397714","https://sr.knowlarity.com/vr/api/getrecording/d242e723-e5fc-4ad1-bde8-5384f097c0c9","https://sr.knowlarity.com/vr/api/getrecording/d509c4f3-90ee-4252-97f6-d83638fc6708","https://sr.knowlarity.com/vr/api/getrecording/b475c444-4412-4c30-b662-11bddc44c825","https://sr.knowlarity.com/vr/api/getrecording/31c6b425-4c7b-4626-8ba7-e4cf5f14bc21","https://sr.knowlarity.com/vr/api/getrecording/7f91e8e8-03c1-4fd7-921e-8e09fc737dc6","https://sr.knowlarity.com/vr/api/getrecording/282b77a4-8dde-4774-aba9-f82e401e251a","https://sr.knowlarity.com/vr/api/getrecording/b999d992-7bc9-44d2-be7b-4cf61af2fd3b","https://sr.knowlarity.com/vr/api/getrecording/403c4236-e9be-4ecf-8148-f9d97eb5a8b6","https://sr.knowlarity.com/vr/api/getrecording/b2c5e64f-2db2-4a13-8158-f613e678ac11","https://sr.knowlarity.com/vr/api/getrecording/92c93bbd-364f-452b-9b71-bb66d459d6cd","https://sr.knowlarity.com/vr/api/getrecording/543bc506-be3f-4d1e-a98d-4411cd1169b3"];
+
+
+  // Function to create clickable links and trigger download
+  function createDownloadLinks() {
+    var linksContainer = document.getElementById('download-links');
+
+    // Loop through the array and create links
+    fileLinks.forEach(function (link) {
+      var anchor = document.createElement('a');
+      anchor.href = link;
+      anchor.textContent = 'https://sr.knowlarity.com/vr/api/getrecording/'+link.split('/').pop(); // Display the filename
+
+      // Set additional attributes for download
+      anchor.download = true;
+
+      // Append the link to the container
+      linksContainer.appendChild(anchor);
+
+      // Add a line break between links
+      linksContainer.appendChild(document.createElement('br'));
+
+      // Attach a click event to trigger the download
+      anchor.addEventListener('click', function(event) {
+        event.preventDefault();
+        downloadFile(link);
+      });
+    });
+  }
+
+  // Function to trigger download
+  function downloadFile(url) {
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', url, true);
+    xhr.responseType = 'blob';
+
+    xhr.onload = function() {
+      var a = document.createElement('a');
+      a.href = window.URL.createObjectURL(xhr.response);
+      a.download = url.split('/').pop();
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+    };
+
+    xhr.send();
+  }
+
+  // Call the function to generate links when the page loads
+  window.onload = createDownloadLinks;
+</script>
+
+<div id="download-links">
+  <!-- Links will be dynamically added here -->
+</div>
+
+</body>
+</html>
